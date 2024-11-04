@@ -8,9 +8,8 @@ st.header('Share of Odometer Readings')
 fig = px.histogram(vehicles_df, x='odometer')
 fig = fig.update_layout(width=800, height=400, margin=dict(l=50, r=50, t=50, b=50))
 
-event = st.plotly_chart(fig, key="odometer", on_select="rerun")
+#event = st.plotly_chart(fig, key="odometer", on_select="rerun")
 
-event
 
 avg_price_per_year = vehicles_df.groupby('model_year')['price'].mean()
 avg_price_per_year = avg_price_per_year.reset_index()

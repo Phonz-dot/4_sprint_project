@@ -20,8 +20,7 @@ fig2 = px.scatter(avg_price_per_year, x='model_year', y='price', title='AVG Pric
 event2 = st.plotly_chart(fig2, key="AVG Price", on_select="rerun")
 
 
-toggle = st.checkbox("Toggle Between Graphs")
-if toggle:
-    event1
 
-      
+toggle = st.toggle("Toggle Between Graphs")
+if toggle:
+    st.write(event2)

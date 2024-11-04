@@ -21,6 +21,6 @@ event2 = st.plotly_chart(fig2, key="AVG Price", on_select="rerun")
 
 
 
-toggle = st.toggle("Toggle Between Graphs")
+toggle = st.checkbox("Toggle Between Graphs")
 if toggle:
     st.write(event2)

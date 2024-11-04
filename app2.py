@@ -26,7 +26,7 @@ toggle = st.checkbox("Toggle Between Graphs")
 
 
 if toggle:
-      st.plotly_chart(event)
+      event
 else:
-     st.plotly_chart(event2)
+      event2
    

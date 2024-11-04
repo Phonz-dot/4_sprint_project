@@ -3,9 +3,9 @@ import streamlit as st
 import plotly.express as px
 vehicles_df = pd.read_csv('vehicles_us.csv')
 
-st.header('Share of Odometer Readings')
+st.header('Used Vehicle Inventory Facts')
 #First Plot
-fig1 = px.histogram(vehicles_df, x='odometer')
+fig1 = px.histogram(vehicles_df, x='odometer', title='Odometer Reading Distribution')
 fig1.update_layout(width=800, height=400, margin=dict(l=50, r=50, t=50, b=50))
 
 

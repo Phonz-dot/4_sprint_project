@@ -25,7 +25,7 @@ event2 = st.plotly_chart(fig, key="AVG Price", on_select="rerun")
 toggle = st.checkbox("Toggle Between Graphs")
 
 
-if toggle('Show histogram'):
+if toggle:
       st.plotly_chart(event)
 else:
      st.plotly_chart(event2)
